@@ -1,0 +1,21 @@
+doctype html
+html(lang="ru-Ru")
+  head 
+    meta(charset="UTF-8")
+    title bitokpro
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="css/style.min.css")
+  body
+    main.page-main
+      div.container
+        section.content
+          picture.content__img
+            source(media="(min-width: 1140px)" srcset="img/ice.png")
+            source(media="(min-width: 768px)" srcset="img/ice-med.png")
+            img(src="img/ice-min.png" width="280" height="240" alt="мороженое")
+          div.content__info
+            a(href="https://telegram.me/groupname").content__title @BitokPro
+            div.content__text
+              p >> моментальные обмены
+              p >> без верификации 
+              p >> 4 года в игре
