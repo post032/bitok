@@ -5,6 +5,8 @@
   background-repeat: repeat;
   background-size: 100%;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
 }
 
 .page-main::after {
@@ -16,4 +18,11 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+
+@media (min-width: @size-desktop) {
+  .page-main {
+    padding-top: 100px;
+    align-items: flex-start;
+  }
 }

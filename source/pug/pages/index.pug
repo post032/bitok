@@ -10,12 +10,19 @@ html(lang="ru-Ru")
       div.container
         section.content
           picture.content__img
-            source(media="(min-width: 1140px)" srcset="img/ice.png")
+            source(media="(min-width: 1500px)" srcset="img/ice.png")
             source(media="(min-width: 768px)" srcset="img/ice-med.png")
             img(src="img/ice-min.png" width="280" height="240" alt="мороженое")
           div.content__info
             a(href="https://telegram.me/groupname").content__title @BitokPro
             div.content__text
-              p >> моментальные обмены
-              p >> без верификации 
-              p >> 4 года в игре
+              button(type="button" id="button1") >> моментальные обмены
+              div(id="open1").content__open.content__toggle
+                p какой-то текст
+              button(type="button" id="button2") >> без верификации
+              div(id="open2").content__open.content__toggle
+                p какой-то текст
+              button(type="button" id="button3") >> 4 года в игре
+              div(id="open3").content__open.content__toggle
+                p какой-то текст
+    script(type="text/javascript" src="js/script.js")
